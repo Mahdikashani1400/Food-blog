@@ -1,0 +1,62 @@
+.food__mini__box {
+  padding-top: 0.5rem;
+}
+.food__mini__box .box__container .content {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.food__mini__box .box__img,
+.food__mini__box img {
+  width: 100px;
+  height: 100px;
+}
+.food__mini__box .box__text {
+  gap: 0.2rem;
+}
+.food__mini__box .title__box a {
+  font-size: 18px;
+}
+.mini__box {
+  position: relative;
+}
+.mini__box::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #fecc01;
+  bottom: -3px;
+  left: 0;
+}
+.food__mini__box .mini__box::after {
+  height: 1px;
+}
+.food__mini__box-col .food__intro {
+  flex-direction: column;
+}
+.food__mini__box-col .box__container {
+  padding: 0;
+  gap: 0.7rem;
+}
+
+/* MiniBoxPost */
+.mini__box-post .food__intro {
+  gap: 2rem;
+}
+.mini__box-post * {
+  color: #fff !important;
+}
+.mini__box-post img {
+  border-radius: 50%;
+}
+.mini__box-post .mini__box::after {
+  height: 0;
+}
+.mini__box-post .title__box a {
+  font-size: 16px;
+}
+.mini__box-post svg {
+  width: 16px;
+  height: 16px;
+}

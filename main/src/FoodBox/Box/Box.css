@@ -1,0 +1,28 @@
+.box__container {
+  padding: 1rem;
+}
+.box__container .content {
+  display: flex;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.box__img img,
+.box__img {
+  width: 100%;
+}
+
+.box__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.box__text .mini__box {
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
+}

@@ -1,0 +1,44 @@
+#Tollbar .tollbar__container {
+  background-color: #0f172a;
+}
+.tollbar__content {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.tollbar__content .right,
+.tollbar__content .left {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.tollbar__content .left {
+  gap: 9rem;
+}
+.tollbar__content .left p {
+  position: relative;
+}
+.tollbar__content .left p::after,
+.tollbar__content .left p::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(254, 254, 254, 0.7);
+  height: 0.5px;
+  width: 50px;
+  top: 80%;
+  right: 115px;
+}
+.tollbar__content .left p::before {
+  width: 90px;
+  top: 50%;
+}
+#SocialIcons .content {
+  display: flex;
+  gap: 1rem;
+}
+#SocialIcons .content svg {
+  width: 14px;
+  height: 14px;
+}

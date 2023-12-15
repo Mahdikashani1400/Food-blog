@@ -1,0 +1,12 @@
+.blog__date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.blog__date svg {
+  width: 22px;
+  height: 22px;
+}
+.blog__date span {
+  font-size: 13px;
+}

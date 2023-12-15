@@ -1,0 +1,15 @@
+.title__box a {
+  font-weight: bold;
+
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition: all 0.7s;
+  font-size: 24px;
+  line-height: 33px;
+  padding-bottom: 0.3rem;
+}
+
+.title__box a:hover {
+  background-size: 100% 1px;
+}
