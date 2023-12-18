@@ -16,6 +16,9 @@ import FoodLearn from "../FoodBox/main/FoodBlog/FoodLearn";
 import IconBox from "../Icons/IconBox";
 import MiniBoxPost from "../FoodBox/main/FoodMiniBox/MiniBoxPost";
 import InfoBox from "../FoodBox/main/FoodIntro/InfoBox";
+import Categories from "../categories/categories";
+import Gallery from "../Gallery/Gallery";
+import Footer from "../Footer/Footer";
 function App() {
   const iconBoxInfo = [
     {
@@ -42,7 +45,6 @@ function App() {
     },
     { color: "#ef242b", name: "youtube", title: "عضویت ها", count: "610" },
   ];
-
   return (
     <>
       <div className="app__container">
@@ -96,12 +98,9 @@ function App() {
                       <div className="">
                         <TitleSection title="در ارتباط باش"></TitleSection>
                         <div className="socials__post">
-                          <IconBox {...iconBoxInfo[0]}></IconBox>
-                          <IconBox {...iconBoxInfo[1]}></IconBox>
-                          <IconBox {...iconBoxInfo[2]}></IconBox>
-                          <IconBox {...iconBoxInfo[3]}></IconBox>
-                          <IconBox {...iconBoxInfo[4]}></IconBox>
-                          <IconBox {...iconBoxInfo[5]}></IconBox>
+                          {iconBoxInfo.map((icon, index) => (
+                            <IconBox key={index} {...icon}></IconBox>
+                          ))}
                         </div>
                       </div>
                       <div className="">
@@ -126,13 +125,35 @@ function App() {
                       <TitleSection title="پست های ویژه"></TitleSection>
                       <InfoBox></InfoBox>
                     </div>
+                    <div className="btn__container">
+                      <a href="#" className="btn">
+                        مشاهده مطالب
+                      </a>
+                    </div>
                   </div>
-                  <div className="left"></div>
+                  <div className="left">
+                    <div className="left__content">
+                      <div className="">
+                        <TitleSection title="دسته بندی ها"></TitleSection>
+                        <Categories></Categories>
+                      </div>
+                      <div className="food__box">
+                        <TitleSection title="بیشتر بخوانید"></TitleSection>
+                        <FoodMiniBoxCol></FoodMiniBoxCol>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+          <section className="gallery">
+            <div className="content">
+              <Gallery></Gallery>
+            </div>
+          </section>
         </main>
+        <Footer></Footer>
       </div>
     </>
   );

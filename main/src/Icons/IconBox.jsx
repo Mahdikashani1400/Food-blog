@@ -1,6 +1,7 @@
 import SingleIcon from "./SingleIcon";
 import "./IconBox.css";
 export default function IconBox(props) {
+  console.log(props);
   //   if (props.count > 500) {
   const { color = "", name, title, count } = props;
   return (

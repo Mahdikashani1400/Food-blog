@@ -24,9 +24,9 @@ function MiniBoxPost() {
       <div className="food__mini__box">
         <div className="food__mini__box-col">
           <div className="food__intro">
-            <Box {...boxInfo[0]}></Box>
-            <Box {...boxInfo[1]}></Box>
-            <Box {...boxInfo[2]}></Box>
+            {boxInfo.map((info,index) => (
+              <Box key={index} {...info}></Box>
+            ))}
           </div>
         </div>
       </div>

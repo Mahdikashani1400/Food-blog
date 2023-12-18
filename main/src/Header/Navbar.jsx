@@ -25,7 +25,7 @@ export default function Navbar() {
               <SingleIcon name="magnifying-glass"></SingleIcon>
               <SingleIcon name="shopping-bag"></SingleIcon>
             </div>
-            <a href="#" className="login__btn">
+            <a href="#" className="btn">
               <span>ورود</span>
             </a>
           </div>

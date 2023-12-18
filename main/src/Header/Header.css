@@ -40,24 +40,6 @@
 #Header .icons span {
   cursor: pointer;
 }
-a.login__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #3b82f6;
-  color: #fff;
-  border-radius: 6px;
-  width: 65px;
-  height: 40px;
-  transition: 0.3s all;
-}
-a.login__btn:hover {
-  background-color: #0e2447;
-}
-
-a.login__btn span {
-  margin-top: -3px;
-}
 
 .nav__icons svg {
   width: 22px;
@@ -83,13 +65,13 @@ a.login__btn span {
     width: 20px;
   }
 }
-@media screen and (max-width: 500px) {
-  #Header .icons {
+@media screen and (max-width: 400px) {
+  #Header {
     display: none;
   }
-  #Header nav ul {
+  /* #Header nav ul {
     flex-direction: column;
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
+  } */
 }

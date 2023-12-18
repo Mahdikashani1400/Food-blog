@@ -1,0 +1,10 @@
+.photos__container {
+  display: flex;
+}
+.photos__container > div {
+  width: 25%;
+  height: 450px;
+}
+.photos__container img {
+  height: 100%;
+}

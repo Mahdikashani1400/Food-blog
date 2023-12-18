@@ -27,15 +27,9 @@ function FoodMiniBox() {
   return (
     <div className="food__mini__box">
       <div className="food__intro">
-        <Box
-          {...boxInfo[0]}
-        ></Box>
-        <Box
-          {...boxInfo[1]}
-        ></Box>
-        <Box
-          {...boxInfo[2]}
-        ></Box>
+        <Box {...boxInfo[0]}></Box>
+        <Box {...boxInfo[1]}></Box>
+        <Box {...boxInfo[2]}></Box>
       </div>
     </div>
   );

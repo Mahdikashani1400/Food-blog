@@ -26,10 +26,9 @@ export default function FoodBlog() {
   ];
   return (
     <div className="food__blogs__content">
-      <Box {...boxInfo[0]}></Box>
-      <Box {...boxInfo[1]}></Box>
-      <Box {...boxInfo[2]}></Box>
-      <Box {...boxInfo[3]}></Box>
+      {boxInfo.map((info, index) => (
+        <Box key={index} {...info}></Box>
+      ))}
     </div>
   );
 }

@@ -16,8 +16,9 @@ function FoodIntro() {
   ];
   return (
     <div className="food__intro">
-      <Box {...boxInfo[0]}></Box>
-      <Box {...boxInfo[1]}></Box>
+      {boxInfo.map((info, index) => (
+        <Box key={index} {...info}></Box>
+      ))}
     </div>
   );
 }
