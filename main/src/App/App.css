@@ -215,6 +215,11 @@ section {
   .food__intro {
     margin: auto 2rem;
   }
+  .food__mini__box-col .food__intro,
+  .mini__boxes--post .food__intro {
+    margin-top: 3.5rem;
+    gap: 3rem !important;
+  }
   .food__intro a {
     font-size: 18px;
   }
@@ -227,7 +232,7 @@ section {
     padding: 2rem !important;
   }
   .TitleSection {
-    padding-right: 2rem;
+    padding: 0 !important;
   }
   .category__container .content {
     margin: auto 2rem;
@@ -251,6 +256,51 @@ section {
   }
   .food__info-boxes .content {
     padding: 2rem;
+  }
+  /* footer__container */
+  .footer__container .top .content {
+    flex-direction: column;
+    margin-right: 3rem;
+    gap: 4rem;
+  }
+  .footer__container .bottom,
+  .footer__container .bottom ul {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 0.5rem !important;
+  }
+
+  .footer__container .content > div {
+    width: 100% !important;
+  }
+
+  /* food__info */
+
+  .food__info .food__intro {
+    margin: 0;
+  }
+  .box__text {
+    padding-top: 10px !important;
+  }
+  .food__info-boxes .food__intro {
+    margin: auto;
+    width: 95%;
+  }
+  .btn__container {
+    padding-top: 1rem !important;
+  }
+  .cat__box__container .content {
+    margin: 0 !important;
+  }
+  .food__info-boxes img,
+  .food__info-boxes .box__img {
+    width: 240px !important;
+    height: 240px !important;
+    margin-top: 1rem;
+  }
+  .food__info-boxes .box__container,
+  .food__info-boxes .content {
+    padding: 0;
   }
 }
 @media screen and (max-width: 650px) {

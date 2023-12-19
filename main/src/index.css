@@ -22,7 +22,10 @@ a {
   text-decoration: inherit;
   color: unset;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
 
